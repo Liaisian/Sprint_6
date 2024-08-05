@@ -16,4 +16,3 @@ class MetroStation:
     STATION_TEXT_2 = 'Черкизовская'
 
 
-

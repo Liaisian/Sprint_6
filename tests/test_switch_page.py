@@ -1,10 +1,10 @@
 import allure
 
+from pages.switch_page import SwitchPage
 from url import URL_MAIN, URL_DZEN
 from conftest import driver
 from helpers import generate_order_info
 from pages.order_page import OrderPage
-from pages.switch_page import SwitchPage
 
 
 class TestHeaderPage:
@@ -13,7 +13,7 @@ class TestHeaderPage:
     def test_switch_from_sqooter_logo(self, driver):
         order_page = OrderPage(driver)
         switch_page = SwitchPage(driver)
-        order_info = generate_order_info
+        order_info = generate_order_info()
         order_page.set_order(order_info)
         assert switch_page.check_switch_from_sqooter_logo() == URL_MAIN
 

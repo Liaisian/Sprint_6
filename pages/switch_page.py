@@ -1,3 +1,4 @@
+import allure
 from url import URL_ORDER
 from conftest import driver
 from locators.switch_page_locators import Switch_page_locators
@@ -17,6 +18,9 @@ class SwitchPage(BasePage):
         scroll_to_element(Switch_page_locators.YANDEX_LOGO)
         self.click_to_element(Switch_page_locators.YANDEX_LOGO)
         return self.get_current_url
+
+
+
 
 
 

@@ -1,6 +1,4 @@
 import allure
-
-from data import MetroStation
 from helpers import generate_order_info
 from pages.main_page import MainPage
 from pages.order_page import OrderPage

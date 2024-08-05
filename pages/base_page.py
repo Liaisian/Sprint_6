@@ -24,8 +24,8 @@ class BasePage:
 
     # метод форматирования локатора
     def format_locators(self, locator_1, num):
-        method, locator = locator_1 # '//*[@id="accordion__heading-{}"]'
-        locator = locator.format(num) #  '//*[@id="accordion__heading-0"]'
+        method, locator = locator_1
+        locator = locator.format(num)
         return (method, locator)
 
     def scroll_to_element(self, locator):
@@ -39,5 +39,7 @@ class BasePage:
     "Открывает указанный URL."
     def open_url(self, url: str):
         self.driver.get(url)
+
+
 
 

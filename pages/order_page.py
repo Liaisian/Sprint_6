@@ -1,11 +1,12 @@
 import allure
+import pytest
 from selenium.webdriver.support.ui import Select
+from data import MetroStation
 from url import URL_ORDER
 from helpers import generate_order_info
 from locators.order_page_locators import Order_page_locators
 from pages.base_page import BasePage
 from conftest import driver
-
 
 class OrderPage(BasePage):
 
